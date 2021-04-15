@@ -1,0 +1,7 @@
+{
+    "logFilePath": "logs/firewall_log.log",
+    "host": "localhost",
+    "port": 123,
+    "backUpCount": 100,
+    "fileRollingHrs": 6
+}
