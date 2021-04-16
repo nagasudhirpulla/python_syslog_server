@@ -22,7 +22,7 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
         data = bytes.decode(self.request[0].strip())
         socket = self.request[1]
         strData = str(data)
-        print("%s : " % self.client_address[0], strData)
+        # print("%s : " % self.client_address[0], strData)
         # check if data has  type="traffic" and  subtype="forward"
         isTraffic = " type=\"traffic\" "
         isForwardTraffic = " subtype=\"forward\" "
