@@ -24,10 +24,13 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
         strData = str(data)
         # print("%s : " % self.client_address[0], strData)
         # check if data has  type="traffic" and  subtype="forward"
-        isTraffic = " type=\"traffic\" "
-        isForwardTraffic = " subtype=\"forward\" "
-        if isTraffic and isForwardTraffic:
-            logger.info(strData)
+
+        # isTraffic = " type=\"traffic\" "
+        # isForwardTraffic = " subtype=\"forward\" "
+        # if isTraffic and isForwardTraffic:
+        #     logger.info(strData)
+
+        logger.info(strData)
 
 
 if __name__ == "__main__":
